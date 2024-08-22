@@ -1,0 +1,86 @@
+*{
+    color: white;
+    background-color: #252A34;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+.player{
+    margin: 2vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.red{
+    background-color: #FF2E63;
+}
+
+.x{
+    border: 2px solid black;
+    transition: background-color .15s ease-in-out;
+    /* background-color: #FF2E63; */
+}
+.o{
+    border: 2px solid black;
+    transition: background-color .15s ease-in-out;
+}
+
+.turn{
+    margin: 1vh;
+    display: grid;
+    grid-template-columns:repeat(2, 7vw);
+    /* grid-template-rows: repeat(1, 3vh); */
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.gameContainer{
+    /* margin: 10vh 10vw; */
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box{
+    border: 2px solid black;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vw;
+    font-weight: 500;
+    transition: background-color .15s ease-in-out;
+
+}
+
+.box:hover{
+    background-color: #FF2E63;
+    cursor: pointer;
+}
+
+.reset{
+    font-size: 3vw;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #FF2E63;
+    color: white;
+}
+
+.reset:hover{
+    background-color: #08D9D6;
+    color: black;
+    cursor: pointer;
+}
+
+.info{
+    margin: 1vh;
+}
